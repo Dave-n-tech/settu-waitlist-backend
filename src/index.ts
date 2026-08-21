@@ -12,6 +12,6 @@ export function createApp(): Express {
 }
 
 const app = createApp();
-app.listen(config.PORT, () => {
+app.listen(config.PORT, "0.0.0.0", () => {
   console.log(`Settu waitlist server running on port ${config.PORT}`);
 });
